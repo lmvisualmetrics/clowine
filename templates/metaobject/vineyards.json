@@ -1,0 +1,275 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "rich_text_wjrrNq": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_7TU4xG": {
+          "type": "heading",
+          "settings": {
+            "heading": "<p>{{ metaobject.name.value }}</p>",
+            "heading_size": "h0"
+          }
+        }
+      },
+      "block_order": [
+        "heading_7TU4xG"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "background-1",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "image_banner_XpijK9": {
+      "type": "image-banner",
+      "settings": {
+        "image": "{{ metaobject.banner.value }}",
+        "image_overlay_opacity": 0,
+        "image_width": "page",
+        "image_height": "medium",
+        "adapt_height_first_image": false,
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "rich_text_content_QLJiRG": {
+      "type": "rich-text-content",
+      "blocks": {
+        "text_q7KBeq": {
+          "type": "text",
+          "settings": {
+            "text": "{{ metaobject.content | metafield_tag }}"
+          }
+        }
+      },
+      "block_order": [
+        "text_q7KBeq"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 20
+      }
+    },
+    "multicolumn_with_icons_PadxDj": {
+      "type": "multicolumn-with-icons",
+      "blocks": {
+        "column_Ni8GDF": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/icons-grape-100.png",
+            "title": "Vineyard",
+            "text": "<p>{{ metaobject.name.value }}</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_nMRaLB": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/icons-location-100.png",
+            "title": "Location",
+            "text": "<p>{{ metaobject.location.value }}</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_igXa9n": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/icons-sprout-100.png",
+            "title": "Established",
+            "text": "<p>{{ metaobject.established.value }}</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_8na3Cc": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/icons-mountain-100.png",
+            "title": "Elevation",
+            "text": "<p>{{ metaobject.elevation.value }}</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_3PjLmE": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/icons-dirt-100.png",
+            "title": "Soil",
+            "text": "<p>{{ metaobject.soil.value }}</p>",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_GKQjaM": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/icons-farmer-100.png",
+            "title": "Farmer",
+            "text": "<p>{{ metaobject.farmer.value }}</p>",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_Ni8GDF",
+        "column_nMRaLB",
+        "column_igXa9n",
+        "column_8na3Cc",
+        "column_3PjLmE",
+        "column_GKQjaM"
+      ],
+      "settings": {
+        "title": "",
+        "column_alignment_heading": "center",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "adapt",
+        "columns_desktop": 6,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 20,
+        "padding_bottom": 0
+      }
+    },
+    "multicolumn_eHxTma": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_xQrTx6": {
+          "type": "column",
+          "settings": {
+            "image": "{{ metaobject.image_1.value }}",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        },
+        "column_hkAAAQ": {
+          "type": "column",
+          "settings": {
+            "image": "{{ metaobject.image_2.value }}",
+            "title": "",
+            "text": "",
+            "link_label": "",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "column_xQrTx6",
+        "column_hkAAAQ"
+      ],
+      "settings": {
+        "title": "",
+        "column_alignment_heading": "center",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "portrait",
+        "columns_desktop": 2,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 40,
+        "padding_bottom": 40
+      }
+    },
+    "multicolumn_D6N4Hc": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_aHHh8c": {
+          "type": "column",
+          "settings": {
+            "image": "{{ metaobject.related_vineyard_1.value.image_1.value }}",
+            "title": "{{ metaobject.related_vineyard_1.value.name.value }}",
+            "text": "",
+            "link_label": "MORE INFO",
+            "link": "{{ metaobject.related_vineyard_1.value.system.url }}"
+          }
+        },
+        "column_x7JkWD": {
+          "type": "column",
+          "settings": {
+            "image": "{{ metaobject.related_vineyard_2.value.image_1.value }}",
+            "title": "{{ metaobject.related_vineyard_2.value.name.value }}",
+            "text": "",
+            "link_label": "MORE INFO",
+            "link": "{{ metaobject.related_vineyard_2.value.system.url }}"
+          }
+        },
+        "column_XRtrxE": {
+          "type": "column",
+          "settings": {
+            "image": "{{ metaobject.related_vineyard_3.value.image_1.value }}",
+            "title": "{{ metaobject.related_vineyard_3.value.name.value }}",
+            "text": "",
+            "link_label": "MORE INFO",
+            "link": "{{ metaobject.related_vineyard_3.value.system.url }}"
+          }
+        }
+      },
+      "block_order": [
+        "column_aHHh8c",
+        "column_x7JkWD",
+        "column_XRtrxE"
+      ],
+      "settings": {
+        "title": "Keep on exploring",
+        "column_alignment_heading": "center",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 3,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "1",
+        "swipe_on_mobile": false,
+        "padding_top": 0,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "rich_text_wjrrNq",
+    "image_banner_XpijK9",
+    "rich_text_content_QLJiRG",
+    "multicolumn_with_icons_PadxDj",
+    "multicolumn_eHxTma",
+    "multicolumn_D6N4Hc"
+  ]
+}

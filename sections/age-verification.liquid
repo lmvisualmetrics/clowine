@@ -1,0 +1,258 @@
+<!-- Age Verification Section -->
+{%- style -%}
+  #age-verification {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    display: none;
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .age-verification-container {
+    background: {{ section.settings.popup_background_color }};
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+  }
+
+  .age-verification-logo {
+    margin-bottom: 20px;
+  }
+
+  .age-verification-heading {
+    margin: 0;
+  }
+
+  .age-verification-message {
+    margin: 20px 0;
+  }
+
+  #age-yes {
+    padding: 15px 30px;
+    background-color: {{ section.settings.yes_button_color }};
+    color: {{ section.settings.yes_button_font_color }};
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+    border: 1px solid {{ section.settings.yes_button_border_color }};
+  }
+
+  #age-no {
+    padding: 15px 30px;
+    background-color: {{ section.settings.no_button_color }};
+    color: {{ section.settings.no_button_font_color }};
+    border: none;
+    cursor: pointer;
+    border: 1px solid {{ section.settings.yes_button_border_color }};
+  }
+{%- endstyle -%}
+
+<div id="age-verification">
+  <div class="age-verification-container">
+    {% if section.settings.logo != blank %}
+      {% assign logo_height = section.settings.logo_width | divided_by: section.settings.logo.aspect_ratio %}
+      {{ section.settings.logo | image_url: width: section.settings.width | image_tag:
+        class: 'age-verification-logo',
+        height: logo_height,
+        width: section.settings.logo_width
+      }}
+    {% endif %}
+    <h1 class="age-verification-heading">{{ section.settings.heading }}</h1>
+    <p class="age-verification-message">{{ section.settings.message }}</p>
+    <button id="age-yes">Yes, I am 18+</button>
+    <button id="age-no">No</button>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Check if the user has already confirmed their age
+    var currentPage = window.location.pathname;
+
+    // Determine if the popup should be shown based on the selected settings
+    var showPopup = false;
+
+    // Global setting
+    if ({{ section.settings.show_on_all_pages }}) {
+      showPopup = true;
+    } else {
+      // Check for specific page types if "Show on all pages" is not checked
+      {% if section.settings.show_on_home_page %}
+        if (currentPage === '/') {
+          showPopup = true;
+        }
+      {% endif %}
+
+      {% if section.settings.show_on_product_pages %}
+        if (currentPage.startsWith('/products/')) {
+          showPopup = true;
+        }
+      {% endif %}
+
+      {% if section.settings.show_on_collection_pages %}
+        if (currentPage.startsWith('/collections/')) {
+          showPopup = true;
+        }
+      {% endif %}
+
+      {% if section.settings.show_on_custom_pages %}
+        if (currentPage.startsWith('/pages/')) {
+          showPopup = true;
+        }
+      {% endif %}
+
+      {% if section.settings.show_on_cart_page %}
+        if (currentPage === '/cart') {
+          showPopup = true;
+        }
+      {% endif %}
+    }
+
+    if (!localStorage.getItem('ageVerified') && showPopup) {
+      document.getElementById('age-verification').style.display = 'flex';
+    }
+
+    // Handle the "Yes" button click
+    document.getElementById('age-yes').addEventListener('click', function() {
+      localStorage.setItem('ageVerified', 'true');
+      document.getElementById('age-verification').style.display = 'none';
+    });
+
+    // Handle the "No" button click
+    document.getElementById('age-no').addEventListener('click', function() {
+      alert('You must be 18 or older to enter.');
+      window.location.href = "{{ section.settings.redirect_url }}";
+    });
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Age Verification Popup",
+  "settings": [
+    {
+      "type": "image_picker",
+      "id": "logo",
+      "label": "Logo"
+    },
+    {
+      "type": "range",
+      "id": "logo_width",
+      "min": 100,
+      "max": 250,
+      "step": 10,
+      "default": 120,
+      "unit": "px",
+      "label": "Logo Width"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Popup Heading",
+      "default": "Age Verification"
+    },
+    {
+      "type": "textarea",
+      "id": "message",
+      "label": "Popup Message",
+      "default": "You must be 18 years or older to enter this site. Are you 18 or older?"
+    },
+    {
+      "type": "text",
+      "id": "redirect_url",
+      "label": "Underage Redirect URL",
+      "default": "https://google.com"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_on_all_pages",
+      "label": "Show on All Pages",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "show_on_home_page",
+      "label": "Show on Home Page",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_on_product_pages",
+      "label": "Show on Product Pages",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_on_collection_pages",
+      "label": "Show on Collection Pages",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_on_custom_pages",
+      "label": "Show on Custom Pages",
+      "default": true
+    },
+    {
+      "type": "checkbox",
+      "id": "show_on_cart_page",
+      "label": "Show on Cart Page",
+      "default": true
+    },
+    {
+      "type": "color",
+      "id": "popup_background_color",
+      "label": "Popup Background Color",
+      "default": "#fcfcf4"
+    },
+    {
+      "type": "color",
+      "id": "yes_button_color",
+      "label": "Yes Button Color",
+      "default": "#000"
+    },
+    {
+      "type": "color",
+      "id": "yes_button_font_color",
+      "label": "Yes Button Font Color",
+      "default": "#fff"
+    },
+    {
+      "type": "color",
+      "id": "yes_button_border_color",
+      "label": "Yes Button Border Color",
+      "default": "#000"
+    },
+    {
+      "type": "color",
+      "id": "no_button_color",
+      "label": "No Button Color",
+      "default": "#fff"
+    },
+    {
+      "type": "color",
+      "id": "no_button_font_color",
+      "label": "No Button Font Color",
+      "default": "#000"
+    },
+    {
+      "type": "color",
+      "id": "no_button_border_color",
+      "label": "No Button Border Color",
+      "default": "#000"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Age Verification Popup"
+    }
+  ]
+}
+{% endschema %}
+

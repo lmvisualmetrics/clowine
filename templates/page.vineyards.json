@@ -1,0 +1,183 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "parallax_wV66Ni": {
+      "type": "parallax",
+      "blocks": {
+        "text_hVGjQY": {
+          "type": "text",
+          "settings": {
+            "image": "shopify://shop_images/CL-Sunnyside4-1920x900.jpg",
+            "txt1-hd1": "",
+            "parallax-h": "h2",
+            "txt1-hd2": "",
+            "parallax-subh": "h3",
+            "par1_showbutton": true,
+            "par1_button_label": "",
+            "par1_button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_hVGjQY"
+      ],
+      "settings": {
+        "paral-full": true,
+        "par_img_sz": "720",
+        "par_hd_sz": "55",
+        "par_subhd_sz": "25",
+        "par_button_sz": "25",
+        "par_letter_sp": "1",
+        "par_txt_align": "left",
+        "par_txt_top_pos": "50",
+        "par-en-over": false,
+        "color_over": "#000000",
+        "par_opacity": 1
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 60,
+        "padding_bottom": 40
+      }
+    },
+    "google_maps_JhN6n8": {
+      "type": "google-maps",
+      "blocks": {
+        "location_pbMfxd": {
+          "type": "location",
+          "settings": {
+            "latitude": "-35.775435",
+            "longitude": "148.005337",
+            "heading": "Sunnyside",
+            "description": "Planted in 1987 to Pinot Noir, Sunnyside is located on the outskirts of the Tumbarumba township. The vineyard had not been tended to for over two decades and had to be regrown from the ground up.",
+            "link": "shopify://metaobjects/vineyards/sunnyside"
+          }
+        },
+        "location_dhbqHh": {
+          "type": "location",
+          "settings": {
+            "latitude": "-35.752121",
+            "longitude": "148.009735",
+            "heading": "Glenburnie",
+            "description": "Owned and grown by the Johansen family. This high altitude, sloping site, faces SE and is exposed to the elements. Grown on typical deep basalt soils of the region, this Chardonnay performs well year in year out to make a pristine and elegant wine of the highest quality. It is characterised by a weightier and rounder palate for Tumbarumba Chardonnay.",
+            "link": "shopify://metaobjects/vineyards/glenburnie"
+          }
+        },
+        "location_BmbrzJ": {
+          "type": "location",
+          "settings": {
+            "latitude": "-35.739623",
+            "longitude": "148.008465",
+            "heading": "Mountain View",
+            "description": "Mountain View is next door to Glenburnie, yet it is quite a different vineyard. This relatively flat, yet high altitude, vineyard is planted on granite. The Chardonnay, Pinot Noir, Pinot Gris and Sauvignon Blanc are exquisite here. The fruit has a real presence and typicity in the wines they make. The grapes here are characterised by a tighter and fresher palate compared to Glenburnie. Grown by the Johansen’s.",
+            "link": "shopify://metaobjects/vineyards/mountain-view"
+          }
+        },
+        "location_cfFzcp": {
+          "type": "location",
+          "settings": {
+            "latitude": "-33.299300",
+            "longitude": "148.975563",
+            "heading": "Gordon Hills",
+            "description": "The Gordon Hills site is planted to Chardonnay, Cabernet Franc, Cabernet Sauvignon and Petit Verdot. A high altitude vineyard that is exposed to the warming westerly sun, which is great for these late-ripening red varieties in a cool climate. The vines are planted on basalt over limestone.",
+            "link": "shopify://metaobjects/vineyards/gordon-hills"
+          }
+        }
+      },
+      "block_order": [
+        "location_pbMfxd",
+        "location_dhbqHh",
+        "location_BmbrzJ",
+        "location_cfFzcp"
+      ],
+      "settings": {
+        "default_latitude": "-35.775435",
+        "default_longitude": "148.005337"
+      }
+    },
+    "multicolumn_Rwh6Q6": {
+      "type": "multicolumn",
+      "blocks": {
+        "column_gXYjRm": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Sunnyside2-640x850.jpg",
+            "title": "Sunnyside",
+            "text": "",
+            "link_label": "Explore",
+            "link": "shopify://metaobjects/vineyards/sunnyside"
+          }
+        },
+        "column_NRRLFP": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Glenburnie2-640x850.jpg",
+            "title": "Glenburnie",
+            "text": "",
+            "link_label": "Explore",
+            "link": "shopify://metaobjects/vineyards/glenburnie"
+          }
+        },
+        "column_yTGTzB": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Mountain-View3-640x850.jpg",
+            "title": "Mountain View",
+            "text": "",
+            "link_label": "Explore",
+            "link": "shopify://metaobjects/vineyards/mountain-view"
+          }
+        },
+        "column_zJapYR": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Gordon-Hills3-640x850.jpg",
+            "title": "Gordon Hills",
+            "text": "",
+            "link_label": "Explore",
+            "link": "shopify://metaobjects/vineyards/gordon-hills"
+          }
+        }
+      },
+      "block_order": [
+        "column_gXYjRm",
+        "column_NRRLFP",
+        "column_yTGTzB",
+        "column_zJapYR"
+      ],
+      "settings": {
+        "title": "Explore",
+        "column_alignment_heading": "center",
+        "heading_size": "h1",
+        "image_width": "full",
+        "image_ratio": "square",
+        "columns_desktop": 4,
+        "column_alignment": "center",
+        "background_style": "none",
+        "button_label": "",
+        "button_link": "",
+        "color_scheme": "background-1",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 40,
+        "padding_bottom": 0
+      }
+    }
+  },
+  "order": [
+    "parallax_wV66Ni",
+    "main",
+    "google_maps_JhN6n8",
+    "multicolumn_Rwh6Q6"
+  ]
+}

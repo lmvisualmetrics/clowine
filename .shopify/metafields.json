@@ -1,0 +1,36 @@
+{
+  "article": [],
+  "blog": [],
+  "brand": [],
+  "collection": [],
+  "company": [],
+  "company_location": [],
+  "location": [],
+  "market": [],
+  "order": [],
+  "page": [
+    {
+      "key": "image_1",
+      "namespace": "vineyard",
+      "name": "Image 1",
+      "description": "",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    },
+    {
+      "key": "image_2",
+      "namespace": "vineyard",
+      "name": "Image 2",
+      "description": "",
+      "type": {
+        "name": "file_reference",
+        "category": "REFERENCE"
+      }
+    }
+  ],
+  "product": [],
+  "variant": [],
+  "shop": []
+}

@@ -1,0 +1,25 @@
+<iframe src="https://www.google.com/maps/d/embed?mid=1sLA5nKaGHpcAvuu8kTH1dcO2AsaS4rk&hl=en&ehbc=2E312F" width="100%" height="480"></iframe>
+
+<!-- {% schema %}
+{
+  "name": "Google maps",
+  "tag": "section",
+  "class": "section",
+  "settings": [
+    {
+      "type": "liquid",
+      "id": "google_maps",
+      "label": "Embed Google Maps",
+      "info": "Add Google Maps snippets"
+    },
+  ],
+  "presets": [
+    {
+      "name": "Google Maps"
+    }
+  ]
+}
+{% endschema %} -->
+
+
+    {{ section.settings.google_maps }}

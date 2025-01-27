@@ -1,0 +1,132 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "parallax_hpcwYM": {
+      "type": "parallax",
+      "blocks": {
+        "text_ajEbnP": {
+          "type": "text",
+          "settings": {
+            "image": "shopify://shop_images/CL-Burgundy-1920x900.jpg",
+            "txt1-hd1": "",
+            "parallax-h": "h2",
+            "txt1-hd2": "",
+            "parallax-subh": "h3",
+            "par1_showbutton": false,
+            "par1_button_label": "",
+            "par1_button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_ajEbnP"
+      ],
+      "settings": {
+        "paral-full": true,
+        "par_img_sz": "720",
+        "par_hd_sz": "55",
+        "par_subhd_sz": "25",
+        "par_button_sz": "25",
+        "par_letter_sp": "1",
+        "par_txt_align": "left",
+        "par_txt_top_pos": "50",
+        "par-en-over": false,
+        "color_over": "#000000",
+        "par_opacity": 1
+      }
+    },
+    "main": {
+      "type": "main-page",
+      "settings": {
+        "padding_top": 60,
+        "padding_bottom": 40
+      }
+    },
+    "image_with_text_col_ddyxiB": {
+      "type": "image-with-text-col",
+      "blocks": {
+        "heading_i9RznB": {
+          "type": "heading",
+          "settings": {
+            "heading": "Viticulture",
+            "heading_size": "h1"
+          }
+        },
+        "text_Xm6JgV": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Grow good grapes.</p><p>Good farming is about growing nutrient-rich, healthy produce. Healthy soils, grow good grapes, and good grapes make good wine. It's only by working with nature that we can achieve this.</p><p>It is the responsibility of every farmer to look after their land. Each farmer adhering to their own system of beliefs, created from experience and adapted to ones own, unique situation. There is not judgement here, only the goal to better oneself and ones practices, and the farm.</p><p>In the case of clo, there is no use of herbicides or insecticides in the Sunnyside vineyard. Copper and sulfur (organic substances) are sprayed to protect the vines from mildew and vermicast (worm wee) is delivered onto the soil to improve its nutrition. Cover crops are sown for the winter months to build nutrition and life in the soil.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_i9RznB",
+        "text_Xm6JgV"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Clover2_-_640_x_850.png",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 40
+      }
+    },
+    "image_with_text_col_6FdgeC": {
+      "type": "image-with-text-col",
+      "blocks": {
+        "heading_EjGJgQ": {
+          "type": "heading",
+          "settings": {
+            "heading": "Winemaking",
+            "heading_size": "h1"
+          }
+        },
+        "text_FiLPif": {
+          "type": "text",
+          "settings": {
+            "text": "<p>I’m a one-man band in the winery. I have the help of some friends who grow grapes, but when it comes to the winemaking it’s a solo gig.</p><p>Each clo wishes to capture the season, the place and the time. In the cellar the wines are given time to develop, manually and patiently allowing nature to run its course while fastidiously managing that which can be controlled.</p><p>All clo’s are produced naturally. Fermentation is wild, old oak barriques and foudre are used, elevages are lengthy, and the wines are bottled unfined, unfiltered and without sulfur under cork. I hope you see the wines to be pure, delicious and full of personality, while maintaining stability and typicity.</p><p>Only 7000 bottles produced annually.</p>",
+            "text_style": "body"
+          }
+        }
+      },
+      "block_order": [
+        "heading_EjGJgQ",
+        "text_FiLPif"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Basket_Press_-_640_x_850.png",
+        "height": "small",
+        "desktop_image_width": "small",
+        "layout": "image_first",
+        "desktop_content_position": "top",
+        "desktop_content_alignment": "left",
+        "content_layout": "no-overlap",
+        "color_scheme": "background-1",
+        "mobile_content_alignment": "left",
+        "padding_top": 0,
+        "padding_bottom": 40
+      }
+    }
+  },
+  "order": [
+    "parallax_hpcwYM",
+    "main",
+    "image_with_text_col_ddyxiB",
+    "image_with_text_col_6FdgeC"
+  ]
+}
