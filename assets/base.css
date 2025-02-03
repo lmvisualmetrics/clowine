@@ -2963,10 +2963,69 @@ details-disclosure > details {
   src: url('https://cdn.shopify.com/s/files/1/0706/4256/5403/files/Brandon_Grotesque_regular.otf?v=1731437819');
 }
 
+@font-face {
+  font-family: Jost;
+  src: url("Jost-Regular.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Jost;
+  src: url("Jost-Italic.ttf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+
+@font-face {
+  font-family: Jost;
+  src: url("Jost-Bold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Jost;
+  src: url("Jost-BoldItalic.ttf");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: Jost;
+  src: url("Jost-Light.ttf");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: Jost;
+  src: url("Jost-LightItalic.ttf");
+  font-weight: 200;
+  font-style: italic;
+}
+
 a, p, h1, h2, h3, h4, h5, h6, ul, li {
-  font-family: Brandon !important;
+  font-family: Jost !important;
 }
 
 .page-title, .title, .header, h1, h2 {
   text-transform: uppercase !important;
+}
+
+
+/* custom css */
+
+a.quick-view {
+  background: #FBCE74;
+  max-height: 50px;
+  bottom: 0px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  top: auto !important;
+  transform: translateY(50px);
+  transition: transform 0.4s ease-in;
+  text-decoration: none !important;
 }
