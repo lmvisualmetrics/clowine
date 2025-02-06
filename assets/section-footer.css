@@ -70,12 +70,15 @@
 }
 
 .footer__localization:empty + .footer__column--info {
-  align-items: center;
+  align-items: end;
 }
 
 @media screen and (max-width: 749px) {
   .footer__localization:empty + .footer__column {
     padding-top: 1.5rem;
+  }
+  .footer__localization:empty + .footer__column--info {
+    align-items: center;
   }
 }
 .footer__column {

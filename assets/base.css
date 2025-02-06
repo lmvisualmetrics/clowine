@@ -3029,3 +3029,40 @@ a.quick-view {
   transition: transform 0.4s ease-in;
   text-decoration: none !important;
 }
+
+@media screen and (min-width: 750px) {
+ .footer__blocks-wrapper .footer-block.grid__item:first-child {
+    width: 20%; 
+  }
+
+  .footer__blocks-wrapper .footer-block.grid__item:nth-child(2){
+    /* width: 40%;  */
+  }
+
+  .footer__copyright {
+    min-width: 32%;
+    text-align: left !important;
+  }
+  
+}
+
+.footer-block__details-content p{
+  font-weight: 200;
+}
+
+.newsletter-form__field-wrapper .field::after{
+  box-shadow: none;
+  border-bottom: 1px solid black;
+}
+
+.newsletter-form__field-wrapper .field input{
+  padding-left: 0;
+}
+
+.newsletter-form__field-wrapper .field label,.newsletter-form__field-wrapper .field__input:focus ~ .field__label{
+  left: 0;
+}
+
+.newsletter-form__field-wrapper .field__input:focus, .newsletter-form__field-wrapper .field:hover.field:after{
+  box-shadow: none;
+}
