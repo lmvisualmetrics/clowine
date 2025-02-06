@@ -178,25 +178,25 @@
               "alignment": ""
             }
           },
-          "footer-1": {
-            "type": "link_list",
-            "settings": {
-              "heading": "Info",
-              "menu": "footer"
-            }
-          },
           "newsletter_form_qc4Eme": {
             "type": "newsletter_form",
             "settings": {
               "heading": "Join Our Email List To Know First",
               "subtext": "<p>New releases, special promos and events.</p>"
             }
+          },
+          "footer-1": {
+            "type": "link_list",
+            "settings": {
+              "heading": "Info",
+              "menu": "footer"
+            }
           }
         },
         "block_order": [
           "image_CrB3bA",
-          "footer-1",
-          "newsletter_form_qc4Eme"
+          "newsletter_form_qc4Eme",
+          "footer-1"
         ],
         "settings": {
           "color_scheme": "background-1",
