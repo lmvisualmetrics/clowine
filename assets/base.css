@@ -3028,6 +3028,7 @@ a.quick-view {
   transform: translateY(50px);
   transition: transform 0.4s ease-in;
   text-decoration: none !important;
+  color: white;
 }
 
 @media screen and (min-width: 750px) {

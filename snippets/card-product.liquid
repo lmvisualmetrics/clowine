@@ -94,7 +94,7 @@
                   height="{{ card_product.media[1].height }}"
                 >
               {%- endif -%}
-              {%- assign color_bottle = product.metafields.custom.color | default: '#fbce74' -%}
+              {%- assign color_bottle = card_product.metafields.custom.color | default: '#fbce74' -%}
               <a
                 href="{{ card_product.url }}"
                 class="full-unstyled-link quick-view"
@@ -205,6 +205,7 @@
             {%- endif -%}
 
             {% render 'price', product: card_product, price_class: '' %}
+
           </div>
         </div>
         {%- if show_quick_add -%}
