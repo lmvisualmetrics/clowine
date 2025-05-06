@@ -94,9 +94,11 @@
                   height="{{ card_product.media[1].height }}"
                 >
               {%- endif -%}
+              {%- assign color_bottle = product.metafields.custom.color | default: '#fbce74' -%}
               <a
                 href="{{ card_product.url }}"
                 class="full-unstyled-link quick-view"
+                style="background-color: {{ color_bottle }};"
                 aria-labelledby="CardLink-{{ section_id }}-{{ card_product.id }} Badge-{{ section_id }}-{{ card_product.id }}"
               >
                 Quick view

@@ -30,7 +30,18 @@
       }
     }
   ],
-  "product": [],
+  "product": [
+    {
+      "key": "color",
+      "namespace": "custom",
+      "name": "Color",
+      "description": "",
+      "type": {
+        "name": "color",
+        "category": "COLOR"
+      }
+    }
+  ],
   "variant": [],
   "shop": []
 }
