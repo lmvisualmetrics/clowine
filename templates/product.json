@@ -16,12 +16,18 @@
           "type": "title",
           "settings": {}
         },
-        "description": {
-          "type": "description",
-          "settings": {}
-        },
         "price": {
           "type": "price",
+          "settings": {}
+        },
+        "buy_buttons": {
+          "type": "buy_buttons",
+          "settings": {
+            "show_dynamic_checkout": true
+          }
+        },
+        "description": {
+          "type": "description",
           "settings": {}
         },
         "variant_picker": {
@@ -40,22 +46,16 @@
             "text": "Free freight on orders of 12 bottles or more",
             "text_style": "subtitle"
           }
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_dynamic_checkout": true
-          }
         }
       },
       "block_order": [
         "title",
-        "description",
         "price",
+        "buy_buttons",
+        "description",
         "variant_picker",
         "quantity_selector",
-        "text_fRAUcK",
-        "buy_buttons"
+        "text_fRAUcK"
       ],
       "settings": {
         "enable_sticky_info": true,
